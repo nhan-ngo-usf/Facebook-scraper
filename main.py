@@ -5,8 +5,8 @@ from discord.ext import commands
 import requests
 
 # secret token
-BOT_TOKEN = 'MTA5OTM0MTMyMDg0MzE3NDA4OA.G8uu-z.Orwh7Dk1lDnOgdmsyQcy4Ykl3hisq2JEldFww4'
-GUILD_ID = 1083640013180387349
+BOT_TOKEN = 'MTIwNjAxNDA2MTAxMjA1ODEyNw.Gi31oN.g9aEsaGoarlcnRE7hheujNj3bGAExJvYKWXJ7w'
+GUILD_ID = 1206018127285067789
 
 # innitialize the bot
 class Client(commands.Bot):
@@ -20,7 +20,7 @@ class Client(commands.Bot):
 
     async def on_ready(self):
         synced = await self.tree.sync()
-        
+        print('Bot is ready')
 
 
 # set up client and command tree
